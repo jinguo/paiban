@@ -1,0 +1,20 @@
+{
+  "name": "sberji",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.4.1",
+    "axios": "^0.18.0",
+    "babel-plugin-import": "^1.7.0",
+    "qiniu-js": "^2.2.2",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
