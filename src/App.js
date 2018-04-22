@@ -38,6 +38,7 @@ class App extends Component {
           num++;
           if (num === filesList.length) {
             message.info('图片上传成功')
+            console.log('图片上传成功');
           }
           console.log('res', res)
         }
@@ -175,6 +176,7 @@ class App extends Component {
         img.src = dataUrl;
         document.body.appendChild(img);
         message.info('生成图片成功');
+        console.log('生成图片成功');
       })
       .catch(function (error) {
         console.error('oops, something went wrong!', error);
