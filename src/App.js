@@ -290,6 +290,9 @@ class App extends Component {
               <Radio value={2}>
                 <img className={this.state.value === 2 ? 'templete-img actived' : 'templete-img'} src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF1.png" alt="img" />
               </Radio>
+              <Radio value={3}>
+                <img className={this.state.value === 3 ? 'templete-img actived' : 'templete-img'} src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF1.png" alt="img" />
+              </Radio>
             </RadioGroup>
           </Modal>
           <input id="file" type="file" multiple="true" />
