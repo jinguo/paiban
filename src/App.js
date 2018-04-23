@@ -161,7 +161,7 @@ class App extends Component {
   handleCircleImage3 = () => {
     let tpl2num = 0;
     let tpl2li = '';
-    for (let i = 0; i < this.state.fileLength / 14; i++) {
+    for (let i = 0; i < this.state.fileLength / 12; i++) {
       tpl2num++;
       tpl2li += '<div style="margin-top: 80px"><img id="img1" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 750px" /></div>';
       if (tpl2num === this.state.fileLength) {
@@ -226,7 +226,7 @@ class App extends Component {
   }
   handleCreateResult = () => {
     let tpl2li = this.handleCircleImage();
-    let tpl3li = this.handleCircleImage3()
+    let tpl3li = this.handleCircleImage3();
     const tpl1 =  '<div id="image" style="width: 750px; margin: 0 auto"><div style="text-align: center; margin-top: 40px"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF1%E7%B4%A0%E6%9D%901.png" style="width: 350px" /></div><div style="margin: 40px 0"><img id="img1" src="http://assets.janggwa.cn/1(1).jpg" style="width: 750px" /></div><div style="text-align: right"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF1%E7%B4%A0%E6%9D%902.png" style="width: 148px; margin-right: 48px" /></div><div style="display: flex;justify-content: space-between;align-items: center"><div><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF1%E7%B4%A0%E6%9D%903.png" style="width: 130px; margin-left:24px" /></div><div><div style="margin: 40px 0; text-align: right"><img id="img2" src="http://assets.janggwa.cn/1(2).jpg" style="width: 560px" /></div><div style="margin: 40px 0; text-align: right"><img id="img3" src="http://assets.janggwa.cn/1(3).jpg" style="width: 560px" /></div></div></div><div style="margin: 0 0 40px"><img id="img4" src="http://assets.janggwa.cn/1(4).jpg" style="width: 750px" /></div><div style="text-align: center; margin: 40px 0"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF1%E7%B4%A0%E6%9D%904.png" style="width: 384px" /></div><div style="display: flex;align-items: center"><img id="img5" src="http://assets.janggwa.cn/1(5).jpg" style="width: 556px" /><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF1%E7%B4%A0%E6%9D%905.png" style="width: 184px;margin-left: 10px" /></div><div style="margin-top: 40px"><img id="img6" src="http://assets.janggwa.cn/1(6).jpg" style="width: 750px" /></div></div>';
     const tpl2 = '<div id="image" style="width: 750px; margin: 0 auto; padding-bottom: 150px">' + tpl2li + '</div>';
     const tpl3 = '<div id="image" style="width: 750px; margin: 0 auto; padding-bottom: 150px">' + tpl3li + '</div>';
