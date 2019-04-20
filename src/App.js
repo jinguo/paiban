@@ -18,46 +18,46 @@ class App extends Component {
     var that = this;
     myfile.onchange = function (event) {
       const filesList = event.target.files;
-      const config = {
-        useCdnDomain: true,
-        region: qiniu.region.z0
-      };
-      let token = '';
-      let num = 0;
-      var observer = {
-        next(res) {
-          // ...
-          // console.log('next', res)
-        },
-        error(err) {
-          // ...
-          console.log('error', err)
-        },
-        complete(res) {
-          // ...
-          num++;
-          if (num === filesList.length) {
-            message.info('图片上传成功')
-            console.log('图片上传成功');
-          }
-          console.log('res', res)
-        }
-      }
+      // const config = {
+      //   useCdnDomain: true,
+      //   region: qiniu.region.z0
+      // };
+      // let token = '';
+      // let num = 0;
+      // var observer = {
+      //   next(res) {
+      //     // ...
+      //     // console.log('next', res)
+      //   },
+      //   error(err) {
+      //     // ...
+      //     console.log('error', err)
+      //   },
+      //   complete(res) {
+      //     // ...
+      //     num++;
+      //     if (num === filesList.length) {
+      //       message.info('图片上传成功')
+      //       console.log('图片上传成功');
+      //     }
+      //     console.log('res', res)
+      //   }
+      // }
       that.setState({fileLength: filesList.length})
-      for (let i = 0; i < filesList.length; i++) {
-        const key = filesList[i].name;
-        const file = filesList[i];
-        const putExtra = {
-          fname: filesList[i].name,
-          params: {},
-          mimeType: [] || null
-        };
-        axios.post('http://47.99.133.229:3100/getqntoken', { fileName: key }).then(res => {
-          token = res.data.token;
-          const observable = qiniu.upload(file, key, token, putExtra, config)
-          var subscription = observable.subscribe(observer)
-        })
-      }
+      // for (let i = 0; i < filesList.length; i++) {
+      //   const key = filesList[i].name;
+      //   const file = filesList[i];
+      //   const putExtra = {
+      //     fname: filesList[i].name,
+      //     params: {},
+      //     mimeType: [] || null
+      //   };
+      //   axios.post('http://47.99.133.229:3100/getqntoken', { fileName: key }).then(res => {
+      //     token = res.data.token;
+      //     const observable = qiniu.upload(file, key, token, putExtra, config)
+      //     var subscription = observable.subscribe(observer)
+      //   })
+      // }
     }
   }
   // 模板选择弹框确认
