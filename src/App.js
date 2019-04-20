@@ -373,17 +373,131 @@ class App extends Component {
       }
     }
   }
+  handleCircleImage6 = () => {
+    let tpl2num = 0;
+    let tpl2li = '';
+    for (let i = 0; i < this.state.fileLength / 10; i++) {
+      tpl2num++;
+      // 1
+      tpl2li += '<div style="margin-top: 50px"><img id="img1" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 750px" /></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 2
+      tpl2num++;
+      tpl2li += '<div style="position: relative;margin-top: 80px;text-align: left; margin-left: 70px;"><img id="img2" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 500px; opacity: 0.5;" /><div style="position: absolute; left: 120px; top: -40px;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%901.png" style="width: 440px" /></div><div style="position: absolute; left: 80px; top: 60px;"><img id="img2" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 500px;" /></div></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 3
+      tpl2num++;
+      tpl2li += '<div style="margin-top: 130px; margin-left: 60px;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%902.png" style="width: 280px" /></div><div style="margin-top: 50px"><img id="img3" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 750px" /></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 4、5
+      tpl2num++;
+      tpl2li += '<div style="display: flex; justify-content: flex-start; margin-top: 80px"><div><img id="img4" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 320px" /></div><div style="margin-left: 20px;"><img id="img5" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 320px" /></div><div style="margin-left: 20px;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%903.png" style="width: 20px" /></div></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      tpl2num++;
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 6
+      tpl2num++;
+      tpl2li += '<div style="display: flex; margin-top: 70px; justify-content: flex-end; align-items: flex-end;"><div style="margin-right: 40px;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%904.png" style="width: 100px" /></div><div><img id="img6" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 560px" /></div></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 7
+      tpl2num++;
+      tpl2li += '<div style="margin-top: 90px"><img id="7" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 750px" /></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 8、9
+      tpl2num++;
+      tpl2li += '<div style="margin-top: 70px;display: flex; justify-content: space-between"><div style="margin-top: 80px; margin-left: 30px;"><img id="8" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 320px" /></div><div style="margin-right: 50px;"><div style="text-align: right;"><img id="9" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 300px;" /></div><div style="margin-top: 60px; text-align: right; margin-right: 50px;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%905.png" style="width: 90px;" /></div></div></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      tpl2num++;
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 10
+      tpl2num++;
+      tpl2li += '<div style="margin-top: 20px;"><div style="position: relative; width: 620px;"><img id="10" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 620px;" /><div style="position: absolute; top: 10px; right: -30px;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%906.png" style="width: 80px;" /></div></div></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 11
+      tpl2num++;
+      tpl2li += '<div style="margin-top: 70px"><img id="11" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 750px" /></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 12、13
+      tpl2num++;
+      tpl2li += '<div style="position: relative; margin-top: 40px;"><div style="position: absolute; top: 0; right: 0;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%907.png" style="width: 410px;" /></div><div style="position: absolute; top: 60px; left: 60px;"><img id="12" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 420px" /></div><div style="position: absolute; top: 170px; right: 15px;"><img id="13" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 300px; height: 300px; border-radius: 150px;" /></div></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      tpl2num++;
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 14
+      tpl2num++;
+      tpl2li += '<div style="margin-top: 80px"><img id="14" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 750px" /></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 15
+      tpl2num++;
+      tpl2li += '<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 80px;"><div style="margin-left: 10px;"><img id="15" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 520px" /></div><div style="margin-right: 60px;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%909.png" style="width: 90px" /></div></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 16、17
+      tpl2num++;
+      tpl2li += '<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 80px;"><div style="margin-left: 60px; text-align: center"><div><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%9010.png" style="width: 170px" /></div><div style="margin-top: 20px;"><img id="16" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 280px" /></div><div style="margin-top: 10px;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%9011.png" style="width: 260px" /></div></div><div style="margin-right: 30px;"><img id="17" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 340px" /></div></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      tpl2num++;
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 18
+      tpl2num++;
+      tpl2li += '<div style="margin-top: 50px"><img id="18" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 750px" /></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+      // 19
+      tpl2num++;
+      tpl2li += '<div style="margin-left: 170px; position: relative; width: 510px;"><div style="display: flex; align-items: center; position: absolute; left: -170px; top: 20px; bottom: 0; width: 170px;"><div style="height: 50%;"><img id="19" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 170px; height: 100%; opacity: 0.5;" /></div></div><div style="margin-top: -20px; text-align: center"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%9012.png" style="width: 150px;" /></div><img id="19" src="http://assets.janggwa.cn/1(' + tpl2num + ').jpg?t=' + new Date() + '" style="width: 510px" /><div style="position: absolute; bottom: 30px; right: -50px;"><img src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF6%E7%B4%A0%E6%9D%9013.png?1" style="width: 160px" /></div></div>';
+      if (tpl2num === this.state.fileLength) {
+        return tpl2li;
+      }
+    }
+  }
   handleCreateResult = () => {
     let tpl1li = this.handleCircleImage1();
     let tpl2li = this.handleCircleImage2();
     let tpl3li = this.handleCircleImage3();
     let tpl4li = this.handleCircleImage4();
     let tpl5li = this.handleCircleImage5();
+    let tpl6li = this.handleCircleImage6();
     const tpl1 = '<div id="image" style="width: 750px; margin: 0 auto; padding-bottom: 150px">' + tpl1li + '</div>';
     const tpl2 = '<div id="image" style="width: 750px; margin: 0 auto; padding-bottom: 150px">' + tpl2li + '</div>';
     const tpl3 = '<div id="image" style="width: 750px; margin: 0 auto; padding-bottom: 150px">' + tpl3li + '</div>';
     const tpl4 = '<div id="image" style="width: 750px; margin: 0 auto; padding-bottom: 150px">' + tpl4li + '</div>';
     const tpl5 = '<div id="image" style="width: 750px; margin: 0 auto; padding-bottom: 150px">' + tpl5li + '</div>';
+    const tpl6 = '<div id="image" style="width: 750px; margin: 0 auto; padding-bottom: 150px">' + tpl6li + '</div>';
     let content = '';
     switch (this.state.value) {
       case 1:
@@ -399,6 +513,8 @@ class App extends Component {
         content = tpl4;
       case 5:
         content = tpl5;
+      case 6:
+        content = tpl6;
         break;
       default:
         break;
@@ -457,6 +573,9 @@ class App extends Component {
               </Radio>
               <Radio value={5}>
                 <img className={this.state.value === 5 ? 'templete-img actived' : 'templete-img'} src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF1.png" alt="img" />
+              </Radio>
+              <Radio value={6}>
+                <img className={this.state.value === 6 ? 'templete-img actived' : 'templete-img'} src="http://assets.janggwa.cn/%E6%A8%A1%E6%9D%BF1.png" alt="img" />
               </Radio>
             </RadioGroup>
           </Modal>
